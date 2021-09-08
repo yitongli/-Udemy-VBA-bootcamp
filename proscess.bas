@@ -13,7 +13,7 @@ input_file = Dir(folder_path & file_extension)
 
 Do While input_file <> ""
 
-    Set wbData = Workbooks.Open(Filename:=folder_path & file_extension)
+    Set wbData = Workbooks.Open(Filename:=folder_path & input_file)
     Set shtdata = wbData.Sheets("Data")
 
     shop_number = shtdata.Cells(2,3)
